@@ -49,9 +49,42 @@ html {
     background-color: #fff;
     position: absolute;
     top: 100%;
-    left: 0;
+    
     border-radius: 5px;
     box-shadow: 2px 2px 5px grey;
+  }
+  @media screen and (max-width: 1250px) {
+    .overlay-dropdown {
+      left: -100px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .overlay-dropdown {
+      left: -120px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .budget-items {
+      left: -220px;
+    }
+    .content-items{
+      left: 0px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .dropdown-background-line {
+      height: 200px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .dropdown-background-line {
+      display: grid;
+      grid-template-columns: auto;
+      height: 100%;
+    }
+    .header-first {
+      margin-bottom: 10px;
+    }
   }
  
   input[type="text"] {
