@@ -11,6 +11,7 @@ html {
   .header-first {
     margin-top: 40px;
     position: relative;
+    padding: 0 15px;
   } 
    
 
@@ -19,7 +20,8 @@ html {
       height: 80px;
       background-color: #0093d0;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      flex-wrap: wrap;
   }
   
   .header-label .float-label {
@@ -40,11 +42,13 @@ html {
     display: block;
     
   }
+  
   .overlay-dropdown {
     width: 325px;
     height: auto;
     background-color: #fff;
-    
+    position: absolute;
+    top: 100%;
     border-radius: 5px;
     box-shadow: 2px 2px 5px grey;
   }
@@ -87,7 +91,7 @@ html {
   .close-dropdown {
     position: absolute;
     right: 0;
-    top: 35px;
+    top: 0;
     z-index: 2;
     font-size: 18px;
     text-decoration: none;
